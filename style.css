@@ -87,11 +87,16 @@ body {
   z-index: -1;
   inset: 0;
 
-  background: linear-gradient(
+  /* background: linear-gradient(
     135deg,
     rgba(255, 255, 255, .48),
     rgba(255, 255, 255, .20)
-  );
+  ); */
+  background: linear-gradient(
+  135deg,
+  rgba(255, 255, 255, .62) 0%,
+  rgba(255, 255, 255, .34) 100%
+);
 
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
