@@ -1,194 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="PEEDS — premium sports shoe manufacturer.">
+    <title>PEEDS | Business Links</title>
 
-<title>Your Brand Name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
+  <body>
+    <main class="page-shell">
+      <section class="business-card" aria-labelledby="brand-name">
+        <div class="card-overlay" aria-hidden="true"></div>
 
-body{
-    background:#f5f5f5;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    font-family:'Ubuntu',sans-serif;
-}
+        <div class="card-content">
+          <header class="brand-header">
+            <!-- Replace logo.png with your final logo file if its name changes. -->
+            <img class="brand-logo" src="logo.png" alt="PEEDS logo">
+            <p class="eyebrow">Welcome to</p>
+            <h1 id="brand-name">PEEDS</h1>
+            <p class="tagline">Premium Sports Shoe Manufacturer</p>
+            <p class="brand-description">
+              Quality footwear designed for retailers, distributors and wholesale partners.
+            </p>
+          </header>
 
-.container{
-    width:90%;
-    max-width:500px;
-    padding:40px 30px;
-    border-radius:20px;
+          <nav class="link-list" aria-label="PEEDS business links">
+            <!-- Replace # with the final URL or filename for each destination. -->
+            <a class="action-link" href="Brochure.pdf" target="_blank" rel="noopener">
+              <i class="fa-regular fa-file-pdf" aria-hidden="true"></i><span>Download Brochure</span><i class="fa-solid fa-arrow-up-right-from-square arrow" aria-hidden="true"></i>
+            </a>
+            <a class="action-link" href="Catalogue.pdf" target="_blank" rel="noopener">
+              <i class="fa-solid fa-book-open" aria-hidden="true"></i><span>View Catalogue</span><i class="fa-solid fa-arrow-up-right-from-square arrow" aria-hidden="true"></i>
+            </a>
+            <a class="action-link" href="https://peeds.in" target="_blank" rel="noopener">
+              <i class="fa-solid fa-globe" aria-hidden="true"></i><span>Visit Our Website</span><i class="fa-solid fa-arrow-up-right-from-square arrow" aria-hidden="true"></i>
+            </a>
+            <a class="action-link" href="https://facebook.com/peeds.paulco" target="_blank" rel="noopener">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i><span>Follow on Facebook</span><i class="fa-solid fa-arrow-up-right-from-square arrow" aria-hidden="true"></i>
+            </a>
+            <a class="action-link" href="https://instagram.com/peeds.paulco" target="_blank" rel="noopener">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i><span>Follow on Instagram</span><i class="fa-solid fa-arrow-up-right-from-square arrow" aria-hidden="true"></i>
+            </a>
+            <a class="action-link" href="https://maps.app.goo.gl/mtrFUuKEEHV5AWhG9" target="_blank" rel="noopener">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Factory Location</span><i class="fa-solid fa-arrow-up-right-from-square arrow" aria-hidden="true"></i>
+            </a>
+          </nav>
 
-    /* Background Image */
-    background-image:url("Background.jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-
-    box-shadow:0 10px 30px rgba(0,0,0,0.15);
-
-    text-align:center;
-}
-
-.logo{
-    width:160px;
-    margin-bottom:20px;
-}
-
-h1{
-    font-size:28px;
-    color:#222;
-    margin-bottom:10px;
-}
-
-.description{
-    color:#666;
-    margin-bottom:30px;
-    line-height:1.6;
-}
-
-.button{
-    position:relative;
-    display:block;
-
-    width:75%;
-    margin:14px auto;
-
-    padding:16px;
-
-    text-decoration:none;
-    color:#FFFFFF;
-
-    font-size:18px;
-    font-weight:600;
-    letter-spacing:0.5px;
-
-    border-radius:12px;
-
-    background: linear-gradient(
-        30deg,
-        #C00000 0%,
-        #002060 50%,
-        #A6A6A6 50%,
-        #3B3838 100%
-    );
-
-    background-size:200% 100%;
-    background-position:left;
-
-    transition:
-        background-position .45s ease,
-        transform .25s ease,
-        box-shadow .25s ease;
-
-    overflow:hidden;
-
-    box-shadow:0 8px 18px rgba(0,0,0,.22);
-  	
-    position:relative;
-    overflow:hidden;
-    isolation:isolate;
-}
-  
-.button::before{
-
-    content:"";
-
-    position:absolute;
-
-    top:0;
-    left:-100%;
-
-    width:100%;
-    height:100%;
-
-    background:linear-gradient(30deg,#A6A6A6 0%,#3B3838 100%);
-
-    transition:left .35s ease;
-
-    z-index:1;
-}
-  
-.button span{
-
-    position:relative;
-    z-index:2;
-}
-
-.button:hover{
-    background-position:right;
-
-    transform:translateY(-3px);
-
-    box-shadow:0 14px 28px rgba(0,0,0,.28);
-}
-
-.button:hover::before{
-    transform:translateX(0);
-}
-
-.footer{
-    margin-top:30px;
-    color:#888;
-    font-size:15px;
-}
-</style>
-
-</head>
-<body>
-
-<div class="container">
-
-    <img src="logo.png" class="logo" alt="Brand Logo">
-
-    <h1>Your Brand</h1>
-
-    <p class="description">
-        Premium Sports Shoe Manufacturer.<br>
-        High quality footwear for retailers, distributors and wholesalers.
-    </p>
-
-    <a class="button" href="Brochure.pdf" target="_blank">
-    <span>📄 Brochure</span>
-    </a>
-
-    <a class="button" href="Catalogue.pdf" target="_blank">
-    <span>📚 Catalogue</span>
-    </a>
-
-    <a class="button" href="https://peeds.in" target="_blank">
-    <span>🌐 Website</span>
-    </a>
-
-    <a class="button" href="https://facebook.com/peeds.paulco" target="_blank">
-        <span>👍 Facebook</span>
-    </a>
-
-    <a class="button" href="https://instagram.com/peeds.paulco" target="_blank">
-    <span>📷 Instagram</span>
-    </a>
-
-    <a class="button" href="https://maps.app.goo.gl/mtrFUuKEEHV5AWhG9" target="_blank">
-    <span>📍 Factory</span>
-    </a>
-
-    <div class="footer">
-        Thank you for visiting!
-    </div>
-
-</div>
-
-
-<script src="https://static.app/js/static.js" type="text/javascript"></script>
-</body>
+          <footer class="card-footer">
+            <p class="values">Quality <span>•</span> Innovation <span>•</span> Trust</p>
+            <p>Thank you for visiting.</p>
+          </footer>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
