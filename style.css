@@ -56,14 +56,8 @@ body {
   position: absolute;
   z-index: -1;
   inset: 0;
-  /* background: linear-gradient(140deg, rgba(255, 255, 255, .89), rgba(255, 255, 255, .72));
-  backdrop-filter: blur(6px); */
-  background: linear-gradient(
-    140deg,
-    rgba(255, 255, 255, .48),
-    rgba(255, 255, 255, .28)
-  );
-  backdrop-filter: blur(3px);
+  background: linear-gradient(140deg, rgba(255, 255, 255, .89), rgba(255, 255, 255, .72));
+  backdrop-filter: blur(6px);
 }
 
 .card-content { padding: 40px 38px 30px; text-align: center; }
@@ -164,6 +158,9 @@ h1 {
 
 .values { margin-bottom: 3px !important; color: #33405a; font-size: .65rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
 .values span { color: #a51b23; padding: 0 3px; }
+
+.coming-soon-card { max-width: 470px; }
+.back-link { width: min(100%, 300px); margin: 29px auto 0; }
 
 @keyframes card-enter { from { opacity: 0; transform: translateY(20px) scale(.985); } to { opacity: 1; transform: none; } }
 @keyframes content-enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
