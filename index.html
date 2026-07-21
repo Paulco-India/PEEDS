@@ -20,6 +20,7 @@ body{
     justify-content:center;
     align-items:center;
     min-height:100vh;
+    font-family:'Ubuntu',sans-serif;
 }
 
 .container{
@@ -74,15 +75,25 @@ h1{
 
     border-radius:12px;
 
-    background:linear-gradient(30deg,#C00000 0%,#002060 100%);
+    background: linear-gradient(
+        30deg,
+        #C00000 0%,
+        #002060 50%,
+        #A6A6A6 50%,
+        #3B3838 100%
+    );
+
+    background-size:200% 100%;
+    background-position:left;
+
+    transition:
+        background-position .45s ease,
+        transform .25s ease,
+        box-shadow .25s ease;
 
     overflow:hidden;
 
     box-shadow:0 8px 18px rgba(0,0,0,.22);
-
-    transition:
-        transform .25s ease,
-        box-shadow .25s ease;
   	
     position:relative;
     overflow:hidden;
@@ -115,8 +126,9 @@ h1{
 }
 
 .button:hover{
+    background-position:right;
 
-    transform:translateY(-2px);
+    transform:translateY(-3px);
 
     box-shadow:0 14px 28px rgba(0,0,0,.28);
 }
