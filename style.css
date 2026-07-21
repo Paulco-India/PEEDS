@@ -94,8 +94,8 @@ body {
   ); */
   background: linear-gradient(
   135deg,
-  rgba(255, 255, 255, .42) 0%,
-  rgba(255, 255, 255, .18) 100%
+  rgba(255, 255, 255, .20) 0%,
+  rgba(255, 255, 255, .8) 100%
 );
 
   backdrop-filter: blur(3px);
