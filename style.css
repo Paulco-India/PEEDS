@@ -108,6 +108,14 @@ body {
 
 .brand-logo {
   display: block;
+  width: min(238px, 77.5%);
+  max-height: 133px;
+  margin: 0 auto 20px;
+  object-fit: contain;
+}
+
+.footer-logo {
+  display: block;
   width: min(190px, 62%);
   max-height: 106px;
   margin: 0 auto 20px;
