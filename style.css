@@ -29,7 +29,7 @@ body {
   padding: 32px 20px;
 }
 
-.business-card {
+/* .business-card {
   position: relative;
   isolation: isolate;
   width: min(100%, 550px);
@@ -58,6 +58,32 @@ body {
   inset: 0;
   background: linear-gradient(140deg, rgba(255, 255, 255, .89), rgba(255, 255, 255, .72));
   backdrop-filter: blur(6px);
+} */
+
+.business-card {
+  position: relative;
+  isolation: isolate;
+  width: min(100%, 550px);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .72);
+  border-radius: 28px;
+
+  background-color: #ffffff;
+  background-image: url("/PEEDS/Background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  box-shadow: 0 28px 65px rgba(22, 32, 51, .22);
+  animation: card-enter .75s cubic-bezier(.2, .8, .2, 1) both;
+}
+
+.business-card::after {
+  display: none;
+}
+
+.card-overlay {
+  display: none;
 }
 
 .card-content { padding: 40px 38px 30px; text-align: center; }
